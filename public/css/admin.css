@@ -1,0 +1,51 @@
+@charset "UTF-8";
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  color: #000;
+}
+
+.navbar-laravel {
+  background-color: #000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.navbar-brand {
+  color: #000 !important;
+}
+
+.nav-link {
+  color: #000 !important;
+}
+
+.table-dark {
+  color: #000;
+}
+
+.list-group-item {
+  border-color: #000;
+  background-color: #fff;
+}
+
+.login-box {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.list-group-item {
+  color: #000;
+  border-color: #000;
+  background-color: #fff;
+}
+
+.login-form {
+  height: 50vh; /* 要素の高さを100%に指定することで、親要素いっぱいに広がるようにする */
+  justify-content: center; /* 横方向に中央揃え */
+  align-items: center; /* 縦方向に中央揃え */
+}
