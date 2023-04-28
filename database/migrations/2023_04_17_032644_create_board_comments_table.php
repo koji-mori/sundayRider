@@ -13,13 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('board_comments', function (Blueprint $table) {
+            //ボードコメント↑という名のテーブル　　select * from board_comments;でみれる
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->integer('user_id');
+            $table->string('content');
+            $table->unsignedBigInteger('board_id');
+            
             $table->timestamps();
         });
     }
@@ -31,8 +31,11 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('board_comments');
     }
+    
+    
+    
     
     
 };

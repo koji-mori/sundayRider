@@ -72,6 +72,32 @@
                 </div>
             </header>
         </div>    
+        <ul class="nav nav-pills nav-fill">
+          <li class="nav-item">
+              <a class="nav-link"  href="{{ url('home') }}">ホーム</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link"  href="{{ route('blog.index') }}">ブログ一覧</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link"  href="{{ route('board.index') }}">掲示板</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link"  href="{{ route('blog.create') }}">ブログを書く</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link"  href="{{ route('board.create') }}">掲示板を書く</a>
+          </li>
+      </ul>
+      <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+          <div class="col-md-6 px-0">
+              <h1 class="display-4 fst-italic">Sunday RIDER'S</h1>
+              <p class="lead my-3">おすすめスポットをのせれるブログとツーリング仲間を募集する掲示板<br>
+              初心者から上級者まで気軽に書き込んでください</p>
+              <p class="lead mb-0"><a href="#" class="text-white fw-bold"></a></p>
+          </div>
+      </div>
+      
         @yield('content')
             
     </body>

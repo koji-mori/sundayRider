@@ -48,6 +48,7 @@ Route::middleware('auth')->group(function() {
     Route::post('board/update/{id}', [BoardController::class, 'update'])->name('board.update');
     Route::get('board/delete/{id}', [BoardController::class, 'delete'])->name('board.delete');
     Route::get('board/{id}/show', [BoardController::class, 'show'])->name('board.show');
+    Route::post('board/create-comment', [BoardController::class, 'createComment'])->name('board.create.comment');
 });
 
 
@@ -55,3 +56,7 @@ use App\Http\Controllers\BoardCommentController;
 
 Route::middleware('auth')->group(function() {
     Route::get('boardcom/create', [BoardCommentController::class, 'add'])->name('boardcom.add');
+    
+    
+    
+});
