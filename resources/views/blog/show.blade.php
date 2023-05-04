@@ -7,7 +7,7 @@
                 <h2>{{ $blog->title }}</h2>
                 <p>{{ $blog->body }}</p>
                 @if ($blog->image_path)
-                    <img src="{{ asset('storage/' . $blog->image_path) }}" alt="blog image">
+                    <img src="{{ secure_asset('storage/image/' . $blog->image_path) }}" alt="blog image" width="600" height="750" >
                 @endif
                 <p>{{ $blog->updated_at }}</p>
                 

@@ -8,7 +8,7 @@
                 <h2>{{ $board->title }}</h2>
                 <p>{{ $board->body }}</p>
                 @if ($board->image_path)
-                    <img src="{{ asset('storage/' . $board->image_path) }}" alt="board image">
+                    <img src="{{ secure_asset('storage/image/' . $board->image_path) }}" alt="image" width="600" height="750" >
                 @endif
                 <p>{{ $board->updated_at }}</p>
                 
