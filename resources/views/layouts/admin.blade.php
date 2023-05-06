@@ -55,7 +55,7 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <ul>
                                     <li>
-                                        <a class="dropdown-item" href="{{ url('home') }}">ホーム</a>
+                                        <a class="dropdown-item" href="{{ route('home') }}">ホーム</a>
                                     </li>
                                     <li>
                                         <a class="dropdown-item" href="{{ route('logout') }}"
@@ -77,7 +77,7 @@
         </div>    
         <ul class="nav nav-pills nav-fill">
           <li class="nav-item">
-              <a class="nav-link"  href="{{ url('home') }}">ホーム</a>
+              <a class="nav-link"  href="{{ route('home') }}">ホーム</a>
           </li>
           <li class="nav-item">
               <a class="nav-link"  href="{{ route('blog.index') }}">ブログ一覧</a>

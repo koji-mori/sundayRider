@@ -47,7 +47,7 @@ class BlogController extends Controller
         $blog->fill($form);
         $blog->save();
         
-        return redirect('home');
+        return redirect(route("home"));
     }
     
     
