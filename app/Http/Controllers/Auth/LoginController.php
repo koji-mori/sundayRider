@@ -61,4 +61,8 @@ class LoginController extends Controller
         return redirect()->route('home'); // ここを好きな遷移先に変更する。
     }
     
+    
+    
+    
+    
 }
